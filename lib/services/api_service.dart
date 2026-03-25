@@ -20,7 +20,8 @@ class ApiService {
       print("Decoded JSON length: ${jsonData.length}");
       return jsonData.map((json) => UserModel.fromJson(json)).toList();
     } else {
-       throw Exception("Failed to load comments");
+       print("Failed to load users");
+       throw Exception("Failed to load users");
     }
   }
 }
