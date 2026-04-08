@@ -5,6 +5,7 @@ class AppPages {
     GetPage(
         name: AppRoutes.login,
         page: () => LoginScreen(),
+        binding: UserBindings(),
     ),
     GetPage(
         name: AppRoutes.dashboard,
@@ -12,7 +13,7 @@ class AppPages {
     ),
     GetPage(
         name: AppRoutes.detail,
-        page: () => DetailsScreen(),
+        page: () => DetailScreen(),
     ),
   ];
 }

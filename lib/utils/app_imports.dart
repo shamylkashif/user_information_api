@@ -2,12 +2,12 @@
 export 'dart:convert';
 export 'package:get/get.dart';
 export 'package:flutter/material.dart';
+export 'package:shared_preferences/shared_preferences.dart';
 
 // Bindings
 export 'package:userinformationapi/bindings/user_bindings.dart';
 
 // Controllers
-export 'package:userinformationapi/controllers/auth_controller.dart';
 export 'package:userinformationapi/controllers/user_controller.dart';
 
 // Models
@@ -26,7 +26,6 @@ export 'package:userinformationapi/screens/details_screen.dart';
 export 'package:userinformationapi/services/api_service.dart';
 
 // Utils
-export 'package:userinformationapi/utils/card.dart';
 export 'package:userinformationapi/utils/validations.dart';
 export 'package:userinformationapi/utils/app_imports.dart';
 

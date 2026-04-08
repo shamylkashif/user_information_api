@@ -22,14 +22,16 @@ class UserModel {
 
   factory UserModel.fromJson(Map<String, dynamic> json){
     return UserModel(
-        id: json['id'],
-        name: json['name'],
-        email: json['email'],
-        street: json['street'],
-        city: json['city'],
-        zipcode: json['zipcode'],
-        phone: json['phone'],
-        companyName: json['companyName'],
+      id: json['id'] ?? 0,
+      name: json['name'] ?? '',
+      email: json['email'] ?? '',
+
+      street: json['address']?['street'] ?? '',
+      city: json['address']?['city'] ?? '',
+      zipcode: json['address']?['zipcode'] ?? '',
+
+      phone: json['phone'] ?? '',
+      companyName: json['company']?['name'] ?? '',
     );
   }
 }
